@@ -1,0 +1,18 @@
+.refresh {
+    background-color: #0000005e;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.refresh:hover {
+    background-color: #00000080;
+}
+
+.refresh > svg {
+    transform: translate(-3px, 3px);
+}

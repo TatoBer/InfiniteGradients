@@ -1,0 +1,31 @@
+header {
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 40px 80px;
+    margin: 30px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header > p {
+    max-width: 350px;
+    font-weight: 200;
+    line-height: 22px;
+    font-size: 22px;
+    opacity: .8;
+}
+
+header > h1 {
+    font-weight: bold;
+    line-height: 27px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header > h1 > svg {
+    transform: translate(-5px, 5px);
+}

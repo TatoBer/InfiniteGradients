@@ -1,0 +1,21 @@
+.copied {
+    position: absolute;
+    padding: 14px 20px;
+    box-shadow: 0 9px 15px -9px greenyellow;
+    border-bottom: 2px solid greenyellow;
+    border-radius: 25px;
+    background-color: #000000e0;
+    bottom: 15px;
+    transition: transform .5s ease;
+    z-index: 999999;
+    opacity: .8;
+}
+
+.copied.off {
+    transform: translateY(150px);
+}
+
+.copied > svg {
+    transform: translate(0, 3px);
+    fill: greenyellow;
+}

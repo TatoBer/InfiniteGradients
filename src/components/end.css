@@ -1,0 +1,13 @@
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #161722 0%, transparent 100%);
+    padding: 35px;
+}
+
+footer > h4 {
+    font-weight: 200;
+}
+
+footer > h4 > svg {
+    transform: translate(-5px, 10px);
+}

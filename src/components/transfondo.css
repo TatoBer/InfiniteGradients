@@ -1,0 +1,13 @@
+.transfondo {
+    z-index: 99999;
+    height: 110vh;
+    position: absolute;
+    width: 110vw;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.transfondo.on {
+    opacity: 1;
+}

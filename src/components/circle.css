@@ -1,0 +1,52 @@
+.circle {
+    width: 220px;
+    height: 220px;
+    background: aliceblue;
+    border-radius: 15px;
+}
+
+.gradient-container {
+    background-color: var(--white);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-container:hover {
+    transform: scale(1.1);
+}
+
+.gradient-container > h6 {
+    font-size: 14px;
+    margin-top: 10px;
+    transition: transform .3s ease;
+}
+
+.gradient-container > p {
+    font-weight: bold;
+    position: absolute;
+    bottom: 7px;
+    transform: translateY(60px);
+    transition: transform .3s ease;
+    user-select: none;
+}
+
+.gradient-container:hover > p {
+    transform: none;
+}
+
+.gradient-container:hover > h6 {
+    transform: translateY(60px);
+}
+
+.gradient-container * {
+    color: #0000009a;
+}
