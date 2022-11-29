@@ -2,14 +2,7 @@ import React from "react";
 import "./circle.css";
 import { FaRegCopy } from "react-icons/fa";
 
-export default function Circle() {
-  const getRandomColor = () => {
-    let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    if (randomColor.length === 6) {
-      randomColor = randomColor + "1";
-    }
-    return randomColor;
-  };
+export default function Circle({color1, color2}) {
 
   const transfondoTransition = () =>{
     const transfondo = document.querySelector(".transfondo")
@@ -35,9 +28,6 @@ export default function Circle() {
       copied.classList.add("off");
     }, 800);
   };
-
-  const color1 = getRandomColor();
-  const color2 = getRandomColor();
 
   const copyGradient = () => {
     const text = `background: linear-gradient(220.55deg, ${color1} 0%, ${color2} 100%)`;
